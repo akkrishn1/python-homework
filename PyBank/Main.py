@@ -56,3 +56,12 @@ print(f"Total $ {profitloss}")
 print(f"average profit change is $ {avg_profit_change}")
 print(f"Greatest increase in profit: {max_profit_date_change} ${max_profit_change}")
 print(f"Greatest decrease in profit: {min_profit_date_change} ${min_profit_change}")
+
+output_path = 'output.txt'
+with open(output_path, 'w') as file:
+    # Write daily_average to the output file, convert to string
+    file.write((f"Total Months: {line_num}\n")
+    file.write(f"Total $ {profitloss}\n”)
+    file.write(f"average profit change is $ {avg_profit_change}\n")
+    file.write(f"Greatest increase in profit: {max_profit_date_change} ${max_profit_change}\n")
+    file.write(f"Greatest decrease in profit: {min_profit_date_change} ${min_profit_change}\n")
