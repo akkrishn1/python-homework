@@ -48,8 +48,8 @@ with open(csvpath, 'r') as csvfile:
         max_profit_change = max(profit_diff)
         min_profit_change = min(profit_diff)
         
-        max_profit_date_change = str(date[profit_diff.index(max(profit_diff))])
-        min_profit_date_change = str(date[profit_diff.index(min(profit_diff))])
+        max_profit_date_change = str(date[profit_diff.index(max(profit_diff))+1])
+        min_profit_date_change = str(date[profit_diff.index(min(profit_diff))+1])
         
 print(f"Total Months: {line_num}")
 print(f"Total $ {profitloss}")
